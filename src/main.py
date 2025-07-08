@@ -90,7 +90,7 @@ RESULTS_PATH = f"./outputs/{RUN_NAME}.jsonl"
 print(f"#########################\nRunning start {RUN_NAME}, Time: {datetime.now()}\n##########################\n")
 
 # your any instruction
-snake_game_instruction = {
+my_instruction = {
     "task_id": "Custom/snake_game",
     "prompt": """
 Please write a Python program to implement the classic Snake game.
@@ -116,7 +116,7 @@ Game Requirements:
 original_dataset = DatasetFactory.get_dataset_class("HumanEval")()
 
 
-original_dataset.data = [snake_game_instruction]
+original_dataset.data = [my_instruction]
 
 
 
